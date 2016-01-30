@@ -2,8 +2,8 @@
 
 title:            SchaetzKc LLC
 locale:           en_US
+#url:  //gschaetz.github.io
 url:
-
 
 # Jekyll configuration
 
@@ -40,23 +40,23 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
+  name: Gary Schaetz
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  bio: "Code to live and live to Code.  Love to play with new technology!"
+  email: gary@schaetzkc.com
   disqus-shortname:
   twitter: #username
-  facebook: #username
+  facebook: gary.schaetz
   google:
     plus: #username
-    analytics:
+    analytics: UA-42842763-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: gschaetz
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: garyschaetz
   xing: #username
   instagram: #username
   lastfm: #username
