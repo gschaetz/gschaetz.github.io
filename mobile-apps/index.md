@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Mobile-Apps
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
+tags: [about, schaetzkc, gary, schaetz, ios, apple, mobile]
+modified: 2016-01-30T20:53:07.573882-04:00
 comments: true
 image:
   feature: headphones.jpg
