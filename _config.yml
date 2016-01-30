@@ -41,8 +41,8 @@ titlecase: true
 # Site owner
 owner:
   name: Gary Schaetz
-  avatar: bio-photo.jpg
-  bio: "Code to live and live to Code.  Love to play with new technology!"
+  avatar: gary.jpg
+  bio: "Code to live and live to Code."
   email: gary@schaetzkc.com
   disqus-shortname:
   twitter: #username

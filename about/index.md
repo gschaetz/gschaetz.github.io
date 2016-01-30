@@ -5,9 +5,9 @@ tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: kansas-city-1.jpg
+  credit: freeimages
+  creditlink: http://www.freeimages.com/photo/keyboard-1528429
 ---
 
 Have a passion for all things code.  I develop mobile applications and am always looking for an opportunity to work with new technologies.
