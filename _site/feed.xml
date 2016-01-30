@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">SchaetzKc LLC</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2016-01-30T12:29:11-06:00</updated>
-<id>/</id>
+<link rel="self" type="application/atom+xml" href="//scahaetzkc.com/feed.xml" />
+<link rel="alternate" type="text/html" href="//scahaetzkc.com" />
+<updated>2016-01-30T12:32:37-06:00</updated>
+<id>//scahaetzkc.com/</id>
 <author>
   <name>Gary Schaetz</name>
-  <uri>/</uri>
+  <uri>//scahaetzkc.com/</uri>
   <email>gary@schaetzkc.com</email>
 </author>
 
@@ -17,14 +17,14 @@
 
 <entry>
   <title type="html"><![CDATA[Green Gas]]></title>
-  <link rel="alternate" type="text/html" href="/green-gas/" />
-  <id>/green-gas</id>
+  <link rel="alternate" type="text/html" href="//scahaetzkc.com/green-gas/" />
+  <id>//scahaetzkc.com/green-gas</id>
   <updated>2016-01-30T00:00:00-00:00</updated>
   <published>2016-01-30T00:00:00-06:00</published>
   
   <author>
     <name>Gary Schaetz</name>
-    <uri></uri>
+    <uri>//scahaetzkc.com</uri>
     <email>gary@schaetzkc.com</email>
   </author>
   <content type="html">
@@ -34,7 +34,7 @@
 
 &lt;p&gt;Guess what the open source MapQuest api I was using has been changed and I have to rebuild location lookup.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/green-gas/&quot;&gt;Green Gas&lt;/a&gt; was originally published by Gary Schaetz at &lt;a href=&quot;&quot;&gt;SchaetzKc LLC&lt;/a&gt; on January 30, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;//scahaetzkc.com/green-gas/&quot;&gt;Green Gas&lt;/a&gt; was originally published by Gary Schaetz at &lt;a href=&quot;//scahaetzkc.com&quot;&gt;SchaetzKc LLC&lt;/a&gt; on January 30, 2016.&lt;/p&gt;
   </content>
 </entry>
 
