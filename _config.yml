@@ -1,9 +1,11 @@
 # Site wide configuration
+theme: minimal-mistakes-jekyll
 
 title:            SchaetzKc LLC
 locale:           en_US
 #url:  //gschaetz.github.io
 url: https://www.schaetzkc.com 
+#url: http://127.0.0.1:4000
 
 # Jekyll configuration
 
