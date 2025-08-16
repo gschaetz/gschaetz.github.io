@@ -8,12 +8,16 @@
     <meta name="description" content="SchaetzKC LLC specializes in AI, Big Data, and Mobile App development. Modern software solutions for your business.">
     
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9C708XL593"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9C708XL593" onerror="console.log('Google Analytics blocked by ad blocker')"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9C708XL593');
+      try {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9C708XL593');
+      } catch (error) {
+        console.log('Google Analytics initialization failed:', error);
+      }
     </script>
   </head>
   <body>
