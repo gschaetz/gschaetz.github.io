@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #f1f5f9; /* Default light text color */
+  }
+  
+  /* Ensure all text inputs have proper styling */
+  input, select, textarea, option {
+    color: #f1f5f9 !important;
+  }
+  
+  /* Fix option text in selects */
+  option {
+    background-color: #334155 !important;
+    color: #f1f5f9 !important;
+  }
+  
+  /* Ensure placeholder text is visible */
+  ::placeholder {
+    color: #94a3b8 !important;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/10 border border-white/20;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  
+  .form-input {
+    @apply w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300;
+  }
+  
+  .form-select {
+    @apply w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300;
+  }
+  
+  .form-textarea {
+    @apply w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300 resize-none;
+  }
+}
