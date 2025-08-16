@@ -15,8 +15,8 @@ if [ $? -eq 0 ]; then
     echo "🌐 To deploy to GitHub Pages:"
     echo "1. Push this repository to GitHub"
     echo "2. Go to repository Settings > Pages"
-    echo "3. Set source to 'GitHub Actions'"
-    echo "4. The site will be available at: https://schaetzkc.github.io/schaetzkc/"
+    echo "3. Set source to 'Deploy from a branch' and select 'main' branch / 'root' folder"
+    echo "4. The site will be available at: https://gschaetz.github.io/"
     echo ""
     echo "Or run: npm run deploy (after installing gh-pages)"
 else
