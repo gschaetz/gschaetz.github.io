@@ -4,9 +4,9 @@ import { Award, Users, Lightbulb, Target } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: 'Years of Experience', value: '10+', icon: Award },
-    { label: 'Projects Completed', value: '50+', icon: Target },
-    { label: 'Happy Clients', value: '25+', icon: Users },
+    { label: 'Years of Experience', value: '20+', icon: Award },
+    { label: 'Projects Completed', value: '20+', icon: Target },
+    { label: 'Happy Clients', value: '10+', icon: Users },
     { label: 'Technologies Mastered', value: '20+', icon: Lightbulb },
   ];
 
@@ -14,9 +14,11 @@ const About = () => {
     'Python & Machine Learning',
     'React & Modern Web Development',
     'iOS & Android Development',
-    'Cloud Architecture (AWS, Azure)',
+    'Cloud Architecture (AWS)',
+    'AI & Natural Language Processing',
     'Data Engineering & Analytics',
     'DevOps & CI/CD',
+    'API Development & Integration',
   ];
 
   return (
