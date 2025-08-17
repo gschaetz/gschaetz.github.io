@@ -51,10 +51,11 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
+    setIsSubmitted(true);
+
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
-    setIsSubmitted(true);
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycby-MwUi3m7Yci4hX8a_667FbHp6LXImChbu3J31Q_iiql92F5Ynvz-hGNjfaN1EGVE3FA/exec';
     const data = new FormData();
