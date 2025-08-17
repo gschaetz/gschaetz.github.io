@@ -1,6 +1,6 @@
 # GitHub Pages Setup Guide
 
-Follow these steps to deploy your Schaetzkc LLC website to GitHub Pages:
+Follow these steps to deploy your SchaetzKC LLC website to GitHub Pages:
 
 ## 📋 Prerequisites
 
