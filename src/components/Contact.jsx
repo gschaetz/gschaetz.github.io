@@ -54,6 +54,7 @@ const Contact = () => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
+    setIsSubmitted(true);
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycby-MwUi3m7Yci4hX8a_667FbHp6LXImChbu3J31Q_iiql92F5Ynvz-hGNjfaN1EGVE3FA/exec';
     const data = new FormData();
@@ -69,7 +70,7 @@ const Contact = () => {
       console.log('Success!', response);
       // Handle success feedback to the user
     } catch (error) {
-      console.error('Error!', error.message);
+      console.log('Error!', error.message);
       // Handle error feedback to the user
     }
 
