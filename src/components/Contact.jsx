@@ -62,7 +62,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch(scriptURL, {
+      const response = fetch(scriptURL, {
         method: 'POST',
         body: data,
       });
