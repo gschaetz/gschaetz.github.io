@@ -16,14 +16,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'gary@schaetzKC.com',
-      href: 'mailto:gary@schaetzKC.com'
+      value: 'apps@schaetzkc.com',
+      href: 'mailto:apps@schaetzkc.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+1 (816) 804-2451',
+      href: 'tel:+18168042451'
     },
     {
       icon: MapPin,
@@ -35,7 +35,7 @@ const Contact = () => {
 
   const services = [
     'AI & Machine Learning',
-    'Big Data Analytics',
+    'Data Analytics',
     'Mobile App Development',
     'Web Development',
     'Data Engineering',
@@ -54,8 +54,25 @@ const Contact = () => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    
+    fetch('https://script.google.com/macros/s/AKfycby-MwUi3m7Yci4hX8a_667FbHp6LXImChbu3J31Q_iiql92F5Ynvz-hGNjfaN1EGVE3FA/exec', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then((response) => {
+        if (response.ok) {
+          setIsSubmitted(true);
+        } else {
+          console.error('Error submitting form:', response.statusText);
+        }
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error);
+      });
+
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
