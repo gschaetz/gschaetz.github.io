@@ -50,7 +50,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
@@ -62,7 +62,7 @@ const Contact = () => {
     }
 
     try {
-      const response = fetch(scriptURL, {
+      const response = await fetch(scriptURL, {
         method: 'POST',
         body: data,
       });
