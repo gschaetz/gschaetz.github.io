@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 
@@ -49,6 +49,25 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
+
+  useEffect(() => {
+    const serviceSelect = document.getElementById('service');
+    const handleExternalChange = (e) => {
+      if (e.target.name === 'service' || e.target.id === 'service') {
+        setFormData(prev => ({
+          ...prev,
+          service: e.target.value
+        }));
+      }
+    };
+
+    if (serviceSelect) {
+      serviceSelect.addEventListener('change', handleExternalChange);
+      return () => {
+        serviceSelect.removeEventListener('change', handleExternalChange);
+      };
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     setIsSubmitted(true);

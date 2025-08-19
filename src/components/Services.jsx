@@ -3,6 +3,29 @@ import { motion } from 'framer-motion';
 import { Brain, Database, Smartphone, ArrowRight } from 'lucide-react';
 
 const Services = () => {
+  const serviceToContactMapping = {
+    'Artificial Intelligence': 'AI & Machine Learning',
+    'Big Data Analytics': 'Data Analytics',
+    'Mobile Applications': 'Mobile App Development'
+  };
+
+  const handleLearnMore = (serviceTitle) => {
+    const contactService = serviceToContactMapping[serviceTitle];
+    const contactSection = document.getElementById('contact');
+    const serviceSelect = document.getElementById('service');
+    
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    setTimeout(() => {
+      if (serviceSelect && contactService) {
+        serviceSelect.value = contactService;
+        serviceSelect.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    }, 500);
+  };
+
   const services = [
     {
       icon: Brain,
@@ -106,6 +129,7 @@ const Services = () => {
 
               {/* CTA Button */}
               <motion.button
+                onClick={() => handleLearnMore(service.title)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300"
