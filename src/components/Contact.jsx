@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,11 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
+
+  // Replace with your actual reCAPTCHA site key from Google reCAPTCHA admin console
+  const RECAPTCHA_SITE_KEY = '6Lcg2yMsAAAAAHmuS8TmM1TIXniwuvRvqgQLxXua'; // This is a test key - replace with your own
 
   const contactInfo = [
     {
@@ -50,6 +56,10 @@ const Contact = () => {
     });
   };
 
+  const handleRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
+  };
+
   useEffect(() => {
     const serviceSelect = document.getElementById('service');
     const handleExternalChange = (e) => {
@@ -70,11 +80,19 @@ const Contact = () => {
   }, []);
 
   const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Check if reCAPTCHA is verified
+    if (!recaptchaToken) {
+      alert('Please complete the reCAPTCHA verification');
+      return;
+    }
+
     setIsSubmitted(true);
 
-    e.preventDefault();
     // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
+    console.log('reCAPTCHA token:', recaptchaToken);
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycby-MwUi3m7Yci4hX8a_667FbHp6LXImChbu3J31Q_iiql92F5Ynvz-hGNjfaN1EGVE3FA/exec';
     const data = new FormData();
@@ -105,6 +123,10 @@ const Contact = () => {
         service: '',
         message: ''
       });
+      setRecaptchaToken(null);
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
     }, 3000);
   };
 
@@ -283,6 +305,15 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300 resize-none"
                     placeholder="Tell us about your project and how we can help..."
+                  />
+                </div>
+
+                <div className="flex justify-center">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={RECAPTCHA_SITE_KEY}
+                    onChange={handleRecaptchaChange}
+                    theme="dark"
                   />
                 </div>
 
