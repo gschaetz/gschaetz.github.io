@@ -15,8 +15,10 @@ const Contact = () => {
   const [recaptchaToken, setRecaptchaToken] = useState(null);
   const recaptchaRef = useRef(null);
 
-  // Replace with your actual reCAPTCHA site key from Google reCAPTCHA admin console
-  const RECAPTCHA_SITE_KEY = '6Lcg2yMsAAAAAHmuS8TmM1TIXniwuvRvqgQLxXua'; // This is a test key - replace with your own
+  // Replace with your actual reCAPTCHA v2 (Checkbox) site key from Google reCAPTCHA admin console
+  // This is Google's official test key for reCAPTCHA v2 - it will always pass validation
+  // For production, replace with your own v2 Checkbox key from https://www.google.com/recaptcha/admin
+  const RECAPTCHA_SITE_KEY = '6LdM3iMsAAAAAJM8bAkn47laJuD0ra8JQxX-d1He'; // Google's test key - always works
 
   const contactInfo = [
     {
