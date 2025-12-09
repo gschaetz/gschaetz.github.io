@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import MobileApps from './pages/MobileApps';
 import RPSPrivacy from './pages/RPSPrivacy';
@@ -8,6 +9,7 @@ import RPSPrivacy from './pages/RPSPrivacy';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900">
         <Navigation />
         <main>
