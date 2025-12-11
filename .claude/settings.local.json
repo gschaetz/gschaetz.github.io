@@ -5,7 +5,8 @@
       "Bash(npm install:*)",
       "mcp__ide__getDiagnostics",
       "Bash(find:*)",
-      "Bash(npm run deploy:*)"
+      "Bash(npm run deploy:*)",
+      "Bash(git fetch:*)"
     ],
     "deny": [],
     "ask": []
