@@ -10,7 +10,7 @@ const MobileApps = () => {
       tagline: 'Rock it. Paper it. Play it.',
       description: 'A modern iOS game featuring the classic Rock Paper Scissors with multiple engaging game modes, SharePlay multiplayer support, and a premium ad-free experience via In-App Purchase.',
       icon: '/apps/rps/app-icon.png',
-      appStoreUrl: 'https://apps.apple.com/us/app/rps-rock-paper-scissor/id6670299623',
+      appStoreUrl: 'https://apps.apple.com/us/app/rps-rock-paper-scissors/id6751595001',
       privacyUrl: '/mobile-apps/rps/privacy',
       screenshots: [
         '/apps/rps/screenshots/6.9inch_iPhone_17_Pro_Max/1.png',
