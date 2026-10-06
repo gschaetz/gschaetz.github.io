@@ -103,7 +103,7 @@ const Services = () => {
               className="bg-dark-700/50 backdrop-blur-sm border border-gray-600/30 rounded-xl p-8 group hover:border-primary-400/50 transition-all duration-300"
             >
               {/* Service Icon */}
-              <div className={`w-16 h-16 rounded-lg bg-gradient-to-r ${service.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`w-16 h-16 rounded-lg bg-linear-to-r ${service.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <service.icon className="w-full h-full text-white" />
               </div>
 
@@ -132,7 +132,7 @@ const Services = () => {
                 onClick={() => handleLearnMore(service.title)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300"
+                className="w-full bg-linear-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300"
               >
                 Learn More
               </motion.button>

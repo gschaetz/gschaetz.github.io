@@ -176,7 +176,7 @@ const Contact = () => {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-center group"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-linear-to-r from-primary-500 to-primary-600 rounded-lg p-3 mr-4 group-hover:scale-110 transition-transform duration-300">
                     <info.icon className="w-full h-full text-white" />
                   </div>
                   <div>
@@ -237,7 +237,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300"
+                      className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder:text-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300"
                       placeholder="John Doe"
                     />
                   </div>
@@ -252,7 +252,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300"
+                      className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder:text-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -269,7 +269,7 @@ const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300"
+                      className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder:text-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300"
                       placeholder="Your Company"
                     />
                   </div>
@@ -305,7 +305,7 @@ const Contact = () => {
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300 resize-none"
+                    className="w-full bg-dark-600 border border-gray-500 rounded-lg px-4 py-3 text-white placeholder:text-gray-400 focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-300 resize-none"
                     placeholder="Tell us about your project and how we can help..."
                   />
                 </div>
@@ -323,7 +323,7 @@ const Contact = () => {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center group"
+                  className="w-full bg-linear-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center group"
                 >
                   <Send size={20} className="mr-2 group-hover:translate-x-1 transition-transform duration-300" />
                   Send Message
