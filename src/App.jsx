@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900">
+      <div className="min-h-screen bg-linear-to-br from-dark-900 via-dark-800 to-dark-900">
         <Navigation />
         <main>
           <Routes>
